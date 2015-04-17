@@ -27,11 +27,16 @@ rm ./.git/hooks/pre-push.sample
 cp ./scripts/pre-push ./.git/hooks/
 ```
 3. Open Terminal and navigate to the directory containing "setup.sh"
-4. Run "sh setup.sh". You should be prompted to enter your email and password (for your Latch Parse account).
+4. Run the shell script. You should be prompted to enter your email and password (for your Latch Parse account).
+
+```sh
+User$ sh setup.sh
+```
 
 ###Usage
 When you push local commits to github the Parse cloud code will be redeployed. If the deployment fails the push will not be performed. 
 * If you would like to push without deploying you can add the "--no-verify" flag. Like this...
+
 ```sh
 User$ git push --no-verify
 ```
