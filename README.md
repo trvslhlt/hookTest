@@ -2,8 +2,6 @@
 ###Setup
 1. Install the Parse command line tools.
 2. Save this shell code as "setup.sh" in the directory where you want the project to live.
-3. Open Terminal and navigate to the directory containing "setup.sh"
-4. Run "sh setup.sh". You should be prompted to enter your email and password (for your Latch Parse account).
 
 ```sh
 #!/bin/sh
@@ -28,6 +26,8 @@ rm ./.git/hooks/pre-push.sample
 #add custom hook
 cp ./scripts/pre-push ./.git/hooks/
 ```
+3. Open Terminal and navigate to the directory containing "setup.sh"
+4. Run "sh setup.sh". You should be prompted to enter your email and password (for your Latch Parse account).
 
 ###Usage
 When you push local commits to github the Parse cloud code will be redeployed. If the deployment fails the push will not be performed. 
